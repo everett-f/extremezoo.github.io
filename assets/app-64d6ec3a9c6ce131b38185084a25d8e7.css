@@ -2843,12 +2843,12 @@ meta.foundation-mq-topbar {
   font-weight: normal;
 }
 /* line 407, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li.title h5 {
+.top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.title-front h5 {
   margin-bottom: 0;
   margin-top: 0;
 }
 /* line 410, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li.title h5 a {
+.top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.title-front h5 a {
   color: white;
   line-height: 22.5px;
   display: block;
@@ -5524,19 +5524,23 @@ blockquote p {
 }
 
 /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.title {
+.title, .title-front {
   color: white;
   font-size: 4.25rem;
+}
+
+/* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+.title-front {
   background: rgba(205, 205, 205, 0.14);
 }
 
-/* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .sub-title {
   font-size: 3.25rem;
   color: #D5D5D5;
 }
 
-/* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -5544,42 +5548,42 @@ body {
   background-image: url("/assets/bg/bridge3-53806a17aeac79aeb46585d969068406.jpg");
 }
 
-/* line 34, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 39, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .page-landing {
   min-height: 700px;
   padding-bottom: 20px;
 }
 
-/* line 42, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 47, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .footer {
   height: 400px;
 }
 
-/* line 54, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 59, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .page-work {
   background: #393aa3;
   height: 800px;
 }
 
-/* line 60, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 65, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .page-about {
-  background: green;
+  background: #b58f45;
   height: 800px;
 }
 
-/* line 66, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 71, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .page-contact {
-  background: red;
+  background: #974040;
   height: 800px;
 }
 
-/* line 72, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 77, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .page-divider {
   height: 40px;
   background: #5F5F5F;
 }
 
-/* line 77, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 82, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 ul.social-media {
   margin: 0 auto 1.0625rem auto;
   margin-left: -1.375rem;
@@ -5601,17 +5605,17 @@ ul.social-media > li {
 ul.social-media > li > * {
   display: block;
 }
-/* line 79, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 84, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 ul.social-media li {
   margin-left: 6rem;
 }
 
-/* line 92, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 97, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 i {
   font-size: 3rem;
   color: #D5D5D5;
 }
-/* line 95, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 100, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 i:hover {
   color: white;
 }

@@ -2207,6 +2207,76 @@ select {
     display: none;
   }
 }
+/* Panels */
+/* line 77, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(227, 227, 227, 0.6);
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.6);
+}
+/* line 52, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel > :first-child {
+  margin-top: 0;
+}
+/* line 53, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel > :last-child {
+  margin-bottom: 0;
+}
+/* line 58, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel li, .panel dl {
+  color: #333333;
+}
+/* line 65, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+/* line 67, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+  line-height: 1.4;
+}
+/* line 79, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel.callout {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b6edff;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #ecfaff;
+}
+/* line 52, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel.callout > :first-child {
+  margin-top: 0;
+}
+/* line 53, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel.callout > :last-child {
+  margin-bottom: 0;
+}
+/* line 58, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p, .panel.callout li, .panel.callout dl {
+  color: #333333;
+}
+/* line 65, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+/* line 67, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+  line-height: 1.4;
+}
+/* line 81, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel.callout a:not(.button) {
+  color: #008cba;
+}
+/* line 86, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
+.panel.radius {
+  border-radius: 3px;
+}
+
 /* line 190, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button, .button {
   border-style: solid;
@@ -2843,12 +2913,12 @@ meta.foundation-mq-topbar {
   font-weight: normal;
 }
 /* line 407, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.title-front h5 {
+.top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.title-main h5, .top-bar-section .dropdown li.title-page h5 {
   margin-bottom: 0;
   margin-top: 0;
 }
 /* line 410, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.title-front h5 a {
+.top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.title-main h5 a, .top-bar-section .dropdown li.title-page h5 a {
   color: white;
   line-height: 22.5px;
   display: block;
@@ -3807,8 +3877,8 @@ blockquote p {
  */
 @font-face {
   font-family: "foundation-icons";
-  src: url("/assets/foundation-icons-128ed914ae0e363647c23dc8ecf585d5.eot");
-  src: url("/assets/foundation-icons-128ed914ae0e363647c23dc8ecf585d5.eot?#iefix") format("embedded-opentype"), url("/assets/foundation-icons-ced7bfcf0d1314a11a6a8777371856e3.woff") format("woff"), url("/assets/foundation-icons-c9afe07999c8278e42b4fd98b00dc6c2.ttf") format("truetype"), url("/assets/foundation-icons-99b78cd1acbb3ead385b0fbd55bae957.svg#fontcustom") format("svg");
+  src: url("/assets/foundation-icons-343d580b94320a30aa4b5e6ff8c6d98c.eot");
+  src: url("/assets/foundation-icons-343d580b94320a30aa4b5e6ff8c6d98c.eot?#iefix") format("embedded-opentype"), url("/assets/foundation-icons-0cea1a30b74bf4949f1130bd59c7e5a2.woff") format("woff"), url("/assets/foundation-icons-375e1213574d7a4d936b11823ae5b484.ttf") format("truetype"), url("/assets/foundation-icons-b277cae49b70679bb8dfacaf0d71e6c7.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -5523,68 +5593,5569 @@ blockquote p {
   content: "\f21a";
 }
 
+@-webkit-keyframes bounce {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  60% {
+    -moz-transform: translateY(-15px);
+  }
+}
+
+@-ms-keyframes bounce {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    -ms-transform: translateY(0);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  40% {
+    -ms-transform: translateY(-30px);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  60% {
+    -ms-transform: translateY(-15px);
+  }
+}
+
+@-o-keyframes bounce {
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0);
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  40% {
+    -o-transform: translateY(-30px);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  60% {
+    -o-transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  40% {
+    transform: translateY(-30px);
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_bounce.scss */
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes flash {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flash {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes flash {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes flash {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_flash.scss */
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+
+  /* line 6, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  50% {
+    -moz-transform: scale(1.1);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-ms-keyframes pulse {
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  0% {
+    -ms-transform: scale(1);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  50% {
+    -ms-transform: scale(1.1);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  100% {
+    -ms-transform: scale(1);
+  }
+}
+
+@-o-keyframes pulse {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  0% {
+    -o-transform: scale(1);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  50% {
+    -o-transform: scale(1.1);
+  }
+
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  100% {
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  0% {
+    transform: scale(1);
+  }
+
+  /* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  50% {
+    transform: scale(1.1);
+  }
+
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_pulse.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes shake {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+  }
+}
+
+@-moz-keyframes shake {
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  0%, 100% {
+    -moz-transform: translateX(0);
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -moz-transform: translateX(-10px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  20%, 40%, 60%, 80% {
+    -moz-transform: translateX(10px);
+  }
+}
+
+@-ms-keyframes shake {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  0%, 100% {
+    -ms-transform: translateX(0);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -ms-transform: translateX(-10px);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  20%, 40%, 60%, 80% {
+    -ms-transform: translateX(10px);
+  }
+}
+
+@-o-keyframes shake {
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  0%, 100% {
+    -o-transform: translateX(0);
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -o-transform: translateX(-10px);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  20%, 40%, 60%, 80% {
+    -o-transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_shake.scss */
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes swing {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  20%, 40%, 60%, 80%, 100% {
+    -webkit-transform-origin: top center;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  20% {
+    -webkit-transform: rotate(15deg);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  40% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  60% {
+    -webkit-transform: rotate(5deg);
+  }
+
+  /* line 6, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  80% {
+    -webkit-transform: rotate(-5deg);
+  }
+
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes swing {
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  20% {
+    -moz-transform: rotate(15deg);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  40% {
+    -moz-transform: rotate(-10deg);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  60% {
+    -moz-transform: rotate(5deg);
+  }
+
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  80% {
+    -moz-transform: rotate(-5deg);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes swing {
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  20% {
+    -ms-transform: rotate(15deg);
+  }
+
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  40% {
+    -ms-transform: rotate(-10deg);
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  60% {
+    -ms-transform: rotate(5deg);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  80% {
+    -ms-transform: rotate(-5deg);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes swing {
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  20% {
+    -o-transform: rotate(15deg);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  40% {
+    -o-transform: rotate(-10deg);
+  }
+
+  /* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  60% {
+    -o-transform: rotate(5deg);
+  }
+
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  80% {
+    -o-transform: rotate(-5deg);
+  }
+
+  /* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  100% {
+    -o-transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  /* line 35, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  20% {
+    transform: rotate(15deg);
+  }
+
+  /* line 36, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  /* line 37, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  60% {
+    transform: rotate(5deg);
+  }
+
+  /* line 38, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  80% {
+    transform: rotate(-5deg);
+  }
+
+  /* line 39, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_swing.scss */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes tada {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 6, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+  }
+}
+
+@-moz-keyframes tada {
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  10%, 20% {
+    -moz-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  30%, 50%, 70%, 90% {
+    -moz-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  40%, 60%, 80% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  100% {
+    -moz-transform: scale(1) rotate(0);
+  }
+}
+
+@-ms-keyframes tada {
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  0% {
+    -ms-transform: scale(1);
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  10%, 20% {
+    -ms-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  30%, 50%, 70%, 90% {
+    -ms-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  40%, 60%, 80% {
+    -ms-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  100% {
+    -ms-transform: scale(1) rotate(0);
+  }
+}
+
+@-o-keyframes tada {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  0% {
+    -o-transform: scale(1);
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  10%, 20% {
+    -o-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  30%, 50%, 70%, 90% {
+    -o-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  40%, 60%, 80% {
+    -o-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  100% {
+    -o-transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  /* line 34, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  0% {
+    transform: scale(1);
+  }
+
+  /* line 35, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 36, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 37, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 38, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_tada.scss */
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@-webkit-keyframes wobble {
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 6, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@-moz-keyframes wobble {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  0% {
+    -moz-transform: translateX(0%);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  15% {
+    -moz-transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  30% {
+    -moz-transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  45% {
+    -moz-transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  60% {
+    -moz-transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  75% {
+    -moz-transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  100% {
+    -moz-transform: translateX(0%);
+  }
+}
+
+@-ms-keyframes wobble {
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  0% {
+    -ms-transform: translateX(0%);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  15% {
+    -ms-transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  30% {
+    -ms-transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  45% {
+    -ms-transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  60% {
+    -ms-transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  75% {
+    -ms-transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  100% {
+    -ms-transform: translateX(0%);
+  }
+}
+
+@-o-keyframes wobble {
+  /* line 34, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  0% {
+    -o-transform: translateX(0%);
+  }
+
+  /* line 35, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  15% {
+    -o-transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 36, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  30% {
+    -o-transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 37, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  45% {
+    -o-transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 38, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  60% {
+    -o-transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 39, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  75% {
+    -o-transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 40, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  100% {
+    -o-transform: translateX(0%);
+  }
+}
+
+@keyframes wobble {
+  /* line 44, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  0% {
+    transform: translateX(0%);
+  }
+
+  /* line 45, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 46, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  30% {
+    transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 47, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 48, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 49, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 50, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_attention/_wobble.scss */
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes bounceIn {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  70% {
+    -webkit-transform: scale(0.9);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes bounceIn {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.3);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1.05);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  70% {
+    -moz-transform: scale(0.9);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-ms-keyframes bounceIn {
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: scale(0.3);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    -ms-transform: scale(1.05);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  70% {
+    -ms-transform: scale(0.9);
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  100% {
+    -ms-transform: scale(1);
+  }
+}
+
+@-o-keyframes bounceIn {
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    -o-transform: scale(0.3);
+  }
+
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    -o-transform: scale(1.05);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  70% {
+    -o-transform: scale(0.9);
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  100% {
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  /* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  /* line 32, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  70% {
+    transform: scale(0.9);
+  }
+
+  /* line 33, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceIn.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes bounceInDown {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes bounceInDown {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(30px);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  80% {
+    -moz-transform: translateY(-10px);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+
+@-ms-keyframes bounceInDown {
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(-2000px);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    -ms-transform: translateY(30px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  80% {
+    -ms-transform: translateY(-10px);
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  100% {
+    -ms-transform: translateY(0);
+  }
+}
+
+@-o-keyframes bounceInDown {
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    -o-transform: translateY(30px);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  80% {
+    -o-transform: translateY(-10px);
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  /* line 32, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  80% {
+    transform: translateY(-10px);
+  }
+
+  /* line 33, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInDown.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bounceInLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  80% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes bounceInLeft {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(30px);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  80% {
+    -moz-transform: translateX(-10px);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes bounceInLeft {
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(-2000px);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    -ms-transform: translateX(30px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  80% {
+    -ms-transform: translateX(-10px);
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  100% {
+    -ms-transform: translateX(0);
+  }
+}
+
+@-o-keyframes bounceInLeft {
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    -o-transform: translateX(30px);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  80% {
+    -o-transform: translateX(-10px);
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  100% {
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+
+  /* line 32, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  80% {
+    transform: translateX(-10px);
+  }
+
+  /* line 33, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInLeft.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes bounceInRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes bounceInRight {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-30px);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  80% {
+    -moz-transform: translateX(10px);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes bounceInRight {
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(2000px);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    -ms-transform: translateX(-30px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  80% {
+    -ms-transform: translateX(10px);
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  100% {
+    -ms-transform: translateX(0);
+  }
+}
+
+@-o-keyframes bounceInRight {
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    -o-transform: translateX(-30px);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  80% {
+    -o-transform: translateX(10px);
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  100% {
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+
+  /* line 32, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  80% {
+    transform: translateX(10px);
+  }
+
+  /* line 33, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInRight.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes bounceInUp {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes bounceInUp {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(-30px);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  80% {
+    -moz-transform: translateY(10px);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+
+@-ms-keyframes bounceInUp {
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(2000px);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    -ms-transform: translateY(-30px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  80% {
+    -ms-transform: translateY(10px);
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  100% {
+    -ms-transform: translateY(0);
+  }
+}
+
+@-o-keyframes bounceInUp {
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    -o-transform: translateY(-30px);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  80% {
+    -o-transform: translateY(10px);
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInUp {
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  /* line 32, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  80% {
+    transform: translateY(10px);
+  }
+
+  /* line 33, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-entrances/_bounceInUp.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bounceOut {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  25% {
+    -webkit-transform: scale(0.95);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+  }
+}
+
+@-moz-keyframes bounceOut {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  25% {
+    -moz-transform: scale(0.95);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1.1);
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: scale(0.3);
+  }
+}
+
+@-ms-keyframes bounceOut {
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  0% {
+    -ms-transform: scale(1);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  25% {
+    -ms-transform: scale(0.95);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    -ms-transform: scale(1.1);
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: scale(0.3);
+  }
+}
+
+@-o-keyframes bounceOut {
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  0% {
+    -o-transform: scale(1);
+  }
+
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  25% {
+    -o-transform: scale(0.95);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    -o-transform: scale(1.1);
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    -o-transform: scale(0.3);
+  }
+}
+
+@keyframes bounceOut {
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  0% {
+    transform: scale(1);
+  }
+
+  /* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  25% {
+    transform: scale(0.95);
+  }
+
+  /* line 32, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  /* line 33, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+@-webkit-keyframes bounceOutDown {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+}
+
+@-moz-keyframes bounceOutDown {
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  0% {
+    -moz-transform: translateY(0);
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    -moz-transform: translateY(-20px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+}
+
+@-ms-keyframes bounceOutDown {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  0% {
+    -ms-transform: translateY(0);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    -ms-transform: translateY(-20px);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateY(2000px);
+  }
+}
+
+@-o-keyframes bounceOutDown {
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  0% {
+    -o-transform: translateY(0);
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    -o-transform: translateY(-20px);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+}
+
+@keyframes bounceOutDown {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+@-webkit-keyframes bounceOutLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+}
+
+@-moz-keyframes bounceOutLeft {
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  0% {
+    -moz-transform: translateX(0);
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    -moz-transform: translateX(20px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+}
+
+@-ms-keyframes bounceOutLeft {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  0% {
+    -ms-transform: translateX(0);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    -ms-transform: translateX(20px);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateX(-2000px);
+  }
+}
+
+@-o-keyframes bounceOutLeft {
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  0% {
+    -o-transform: translateX(0);
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    -o-transform: translateX(20px);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+}
+
+@keyframes bounceOutLeft {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@-webkit-keyframes bounceOutRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+}
+
+@-moz-keyframes bounceOutRight {
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  0% {
+    -moz-transform: translateX(0);
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    -moz-transform: translateX(-20px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+}
+
+@-ms-keyframes bounceOutRight {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  0% {
+    -ms-transform: translateX(0);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    -ms-transform: translateX(-20px);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateX(2000px);
+  }
+}
+
+@-o-keyframes bounceOutRight {
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  0% {
+    -o-transform: translateX(0);
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    -o-transform: translateX(-20px);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+}
+
+@keyframes bounceOutRight {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+@-webkit-keyframes bounceOutUp {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+}
+
+@-moz-keyframes bounceOutUp {
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  0% {
+    -moz-transform: translateY(0);
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    -moz-transform: translateY(20px);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+}
+
+@-ms-keyframes bounceOutUp {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  0% {
+    -ms-transform: translateY(0);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    -ms-transform: translateY(20px);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateY(-2000px);
+  }
+}
+
+@-o-keyframes bounceOutUp {
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  0% {
+    -o-transform: translateY(0);
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    -o-transform: translateY(20px);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+}
+
+@keyframes bounceOutUp {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_bouncing-exits/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-ms-keyframes fadeInDown {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(-20px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(-20px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInDownBig {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDownBig {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-ms-keyframes fadeInDownBig {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(-2000px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInDownBig {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDownBig {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInLeft {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes fadeInLeft {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(-20px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeInLeft {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInLeftBig {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInLeftBig {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes fadeInLeftBig {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(-2000px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeInLeftBig {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeftBig {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInRight {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(20px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes fadeInRight {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(20px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeInRight {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(20px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInRightBig {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInRightBig {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes fadeInRightBig {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(2000px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeInRightBig {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRightBig {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-ms-keyframes fadeInUp {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(20px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUp {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInUpBig {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUpBig {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-ms-keyframes fadeInUpBig {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(2000px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInUpBig {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpBig {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-entrances/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOutDown {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+}
+
+@-moz-keyframes fadeOutDown {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+}
+
+@-ms-keyframes fadeOutDown {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateY(20px);
+  }
+}
+
+@-o-keyframes fadeOutDown {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+}
+
+@keyframes fadeOutDown {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes fadeOutDownBig {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+}
+
+@-moz-keyframes fadeOutDownBig {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+}
+
+@-ms-keyframes fadeOutDownBig {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateY(2000px);
+  }
+}
+
+@-o-keyframes fadeOutDownBig {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+}
+
+@keyframes fadeOutDownBig {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+@-webkit-keyframes fadeOutLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+}
+
+@-moz-keyframes fadeOutLeft {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+}
+
+@-ms-keyframes fadeOutLeft {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateX(-20px);
+  }
+}
+
+@-o-keyframes fadeOutLeft {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@-webkit-keyframes fadeOutLeftBig {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+}
+
+@-moz-keyframes fadeOutLeftBig {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+}
+
+@-ms-keyframes fadeOutLeftBig {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateX(-2000px);
+  }
+}
+
+@-o-keyframes fadeOutLeftBig {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+}
+
+@keyframes fadeOutLeftBig {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@-webkit-keyframes fadeOutRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+}
+
+@-moz-keyframes fadeOutRight {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(20px);
+  }
+}
+
+@-ms-keyframes fadeOutRight {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateX(20px);
+  }
+}
+
+@-o-keyframes fadeOutRight {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(20px);
+  }
+}
+
+@keyframes fadeOutRight {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+@-webkit-keyframes fadeOutRightBig {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+}
+
+@-moz-keyframes fadeOutRightBig {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+}
+
+@-ms-keyframes fadeOutRightBig {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateX(2000px);
+  }
+}
+
+@-o-keyframes fadeOutRightBig {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+}
+
+@keyframes fadeOutRightBig {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+@-webkit-keyframes fadeOutUp {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+}
+
+@-moz-keyframes fadeOutUp {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+}
+
+@-ms-keyframes fadeOutUp {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateY(-20px);
+  }
+}
+
+@-o-keyframes fadeOutUp {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeOutUp {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@-webkit-keyframes fadeOutUpBig {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUpBig.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUpBig.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+}
+
+@-moz-keyframes fadeOutUpBig {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUpBig.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUpBig.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+}
+
+@-o-keyframes fadeOutUpBig {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUpBig.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUpBig.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+}
+
+@keyframes fadeOutUpBig {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUpBig.scss */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_fading-exits/_fadeOutUpBig.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+@-webkit-keyframes flip {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateY(0);
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  40% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  50% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  /* line 6, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  100% {
+    -webkit-transform: perspective(400px) scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+
+@-moz-keyframes flip {
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateY(0);
+    -moz-animation-timing-function: ease-out;
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  40% {
+    -moz-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -moz-animation-timing-function: ease-out;
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  50% {
+    -moz-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -moz-animation-timing-function: ease-in;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  80% {
+    -moz-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -moz-animation-timing-function: ease-in;
+  }
+
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  100% {
+    -moz-transform: perspective(400px) scale(1);
+    -moz-animation-timing-function: ease-in;
+  }
+}
+
+@-o-keyframes flip {
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  0% {
+    -o-transform: perspective(400px) rotateY(0);
+    -o-animation-timing-function: ease-out;
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  40% {
+    -o-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -o-animation-timing-function: ease-out;
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  50% {
+    -o-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -o-animation-timing-function: ease-in;
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  80% {
+    -o-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -o-animation-timing-function: ease-in;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  100% {
+    -o-transform: perspective(400px) scale(1);
+    -o-animation-timing-function: ease-in;
+  }
+}
+
+@keyframes flip {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  /* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flip.scss */
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes flipInX {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flipInX {
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  40% {
+    -moz-transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  70% {
+    -moz-transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  100% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes flipInX {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  0% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  40% {
+    -o-transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  70% {
+    -o-transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  100% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInX {
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  40% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  70% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInX.scss */
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flipInY {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flipInY {
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  40% {
+    -moz-transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  70% {
+    -moz-transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  100% {
+    -moz-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes flipInY {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  0% {
+    -ms-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  40% {
+    -ms-transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  70% {
+    -ms-transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  100% {
+    -ms-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes flipInY {
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  0% {
+    -o-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  40% {
+    -o-transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  70% {
+    -o-transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  100% {
+    -o-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInY {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  0% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  40% {
+    transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  70% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipInY.scss */
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flipOutX {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flipOutX {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  100% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes flipOutX {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  0% {
+    -ms-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  100% {
+    -ms-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes flipOutX {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  0% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  100% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flipOutX {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutX.scss */
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes flipOutY {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flipOutY {
+  /* line 6, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  100% {
+    -moz-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes flipOutY {
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  0% {
+    -ms-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  100% {
+    -ms-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes flipOutY {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  0% {
+    -o-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  100% {
+    -o-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flipOutY {
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_flippers/_flipOutY.scss */
+  100% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes lightSpeedIn {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  0% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  60% {
+    -webkit-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  80% {
+    -webkit-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  100% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes lightSpeedIn {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  0% {
+    -moz-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  60% {
+    -moz-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  80% {
+    -moz-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  100% {
+    -moz-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes lightSpeedIn {
+  /* line 16, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  0% {
+    -ms-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  60% {
+    -ms-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  80% {
+    -ms-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  100% {
+    -ms-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes lightSpeedIn {
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  0% {
+    -o-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  60% {
+    -o-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  80% {
+    -o-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  100% {
+    -o-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  0% {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  60% {
+    transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 32, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  80% {
+    transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 33, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedIn.scss */
+  100% {
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes lightSpeedOut {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  0% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  100% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes lightSpeedOut {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  0% {
+    -moz-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  100% {
+    -moz-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes lightSpeedOut {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  0% {
+    -ms-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  100% {
+    -ms-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes lightSpeedOut {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  0% {
+    -o-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  100% {
+    -o-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes lightSpeedOut {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  0% {
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_lightspeed/_lightSpeedOut.scss */
+  100% {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotateIn {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateIn {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes rotateIn {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  0% {
+    -ms-transform-origin: center center;
+    -ms-transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  100% {
+    -ms-transform-origin: center center;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes rotateIn {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  0% {
+    transform-origin: center center;
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateIn.scss */
+  100% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateInDownLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateInDownLeft {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes rotateInDownLeft {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  0% {
+    -ms-transform-origin: left bottom;
+    -ms-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  100% {
+    -ms-transform-origin: left bottom;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes rotateInDownLeft {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInDownLeft {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownLeft.scss */
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateInDownRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateInDownRight {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes rotateInDownRight {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  0% {
+    -ms-transform-origin: right bottom;
+    -ms-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  100% {
+    -ms-transform-origin: right bottom;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes rotateInDownRight {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInDownRight {
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInDownRight.scss */
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateInUpLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateInUpLeft {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes rotateInUpLeft {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  0% {
+    -ms-transform-origin: left bottom;
+    -ms-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  100% {
+    -ms-transform-origin: left bottom;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes rotateInUpLeft {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInUpLeft {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpLeft.scss */
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateInUpRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateInUpRight {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes rotateInUpRight {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  0% {
+    -ms-transform-origin: right bottom;
+    -ms-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  100% {
+    -ms-transform-origin: right bottom;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes rotateInUpRight {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInUpRight {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-entrances/_rotateInUpRight.scss */
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateOut {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOut {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes rotateOut {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  0% {
+    -ms-transform-origin: center center;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  100% {
+    -ms-transform-origin: center center;
+    -ms-transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes rotateOut {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOut {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  0% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOut.scss */
+  100% {
+    transform-origin: center center;
+    transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotateOutDownLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOutDownLeft {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes rotateOutDownLeft {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  0% {
+    -ms-transform-origin: left bottom;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  100% {
+    -ms-transform-origin: left bottom;
+    -ms-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes rotateOutDownLeft {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutDownLeft {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownLeft.scss */
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotateOutDownRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOutDownRight {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes rotateOutDownRight {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  0% {
+    -ms-transform-origin: right bottom;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  100% {
+    -ms-transform-origin: right bottom;
+    -ms-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes rotateOutDownRight {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutDownRight {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutDownRight.scss */
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotateOutUpLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOutUpLeft {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes rotateOutUpLeft {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  0% {
+    -ms-transform-origin: left bottom;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  100% {
+    -ms-transform-origin: left bottom;
+    -ms-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes rotateOutUpLeft {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutUpLeft {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpLeft.scss */
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotateOutUpRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOutUpRight {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes rotateOutUpRight {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  0% {
+    -ms-transform-origin: right bottom;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  100% {
+    -ms-transform-origin: right bottom;
+    -ms-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes rotateOutUpRight {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutUpRight {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_rotating-exits/_rotateOutUpRight.scss */
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideInDown {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes slideInDown {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-ms-keyframes slideInDown {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes slideInDown {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInDown.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideInLeft {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-ms-keyframes slideInLeft {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes slideInLeft {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInLeft.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideInRight {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-ms-keyframes slideInRight {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes slideInRight {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInRight.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInUp {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes slideInUp {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-ms-keyframes slideInUp {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes slideInUp {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideInUp.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideOutDown {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+@-moz-keyframes slideOutDown {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+@-ms-keyframes slideOutDown {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+@-o-keyframes slideOutDown {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+@keyframes slideOutDown {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+@-webkit-keyframes slideOutLeft {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@-moz-keyframes slideOutLeft {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@-ms-keyframes slideOutLeft {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@-o-keyframes slideOutLeft {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@keyframes slideOutLeft {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+@-webkit-keyframes slideOutRight {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+@-moz-keyframes slideOutRight {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+@-ms-keyframes slideOutRight {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+@-o-keyframes slideOutRight {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes slideOutRight {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+@-webkit-keyframes slideOutUp {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+@-moz-keyframes slideOutUp {
+  /* line 7, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+@-ms-keyframes slideOutUp {
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+@-o-keyframes slideOutUp {
+  /* line 17, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes slideOutUp {
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_sliders/_slideOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+@-webkit-keyframes hinge {
+  /* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  0% {
+    -webkit-transform: rotate(0);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  20%, 60% {
+    -webkit-transform: rotate(80deg);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  40% {
+    -webkit-transform: rotate(60deg);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  80% {
+    -webkit-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 6, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  100% {
+    -webkit-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes hinge {
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  0% {
+    -moz-transform: rotate(0);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+
+  /* line 11, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  20%, 60% {
+    -moz-transform: rotate(80deg);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+
+  /* line 12, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  40% {
+    -moz-transform: rotate(60deg);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+
+  /* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  80% {
+    -moz-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  100% {
+    -moz-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes hinge {
+  /* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  0% {
+    -ms-transform: rotate(0);
+    -ms-transform-origin: top left;
+    -ms-animation-timing-function: ease-in-out;
+  }
+
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  20%, 60% {
+    -ms-transform: rotate(80deg);
+    -ms-transform-origin: top left;
+    -ms-animation-timing-function: ease-in-out;
+  }
+
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  40% {
+    -ms-transform: rotate(60deg);
+    -ms-transform-origin: top left;
+    -ms-animation-timing-function: ease-in-out;
+  }
+
+  /* line 21, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  80% {
+    -ms-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -ms-transform-origin: top left;
+    -ms-animation-timing-function: ease-in-out;
+  }
+
+  /* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  100% {
+    -ms-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes hinge {
+  /* line 26, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  0% {
+    -o-transform: rotate(0);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+
+  /* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  20%, 60% {
+    -o-transform: rotate(80deg);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+
+  /* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  40% {
+    -o-transform: rotate(60deg);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+
+  /* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  80% {
+    -o-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+
+  /* line 30, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  100% {
+    -o-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+@keyframes hinge {
+  /* line 34, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* line 35, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  20%, 60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* line 36, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* line 37, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  80% {
+    transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* line 38, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_hinge.scss */
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rollIn {
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@-moz-keyframes rollIn {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@-ms-keyframes rollIn {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@-o-keyframes rollIn {
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@keyframes rollIn {
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollIn.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rollOut {
+  /* line 4, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(100%) rotate(120deg);
+  }
+}
+
+@-moz-keyframes rollOut {
+  /* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 10, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(100%) rotate(120deg);
+  }
+}
+
+@-ms-keyframes rollOut {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: translateX(100%) rotate(120deg);
+  }
+}
+
+@-o-keyframes rollOut {
+  /* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(100%) rotate(120deg);
+  }
+}
+
+@keyframes rollOut {
+  /* line 24, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 25, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/animate.css-scss/_specials/_rollOut.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(100%) rotate(120deg);
+  }
+}
+
 /* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.title, .title-front {
+.title, .title-main, .title-page {
   color: white;
   font-size: 4.25rem;
 }
 
-/* line 9, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.title-front {
+/* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+.title-main {
   background: rgba(205, 205, 205, 0.14);
 }
 
 /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.sub-title {
-  font-size: 3.25rem;
-  color: #D5D5D5;
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -ms-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-/* line 28, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+.sub-title {
+  font-size: 3.25rem;
+  color: #d5d5d5;
+}
+
+/* line 23, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+.title-page {
+  margin-top: 30px;
+}
+
+/* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("/assets/bg/bridge3-53806a17aeac79aeb46585d969068406.jpg");
+  background-image: url("/assets/bg/bridge3-c04a0a14666844ef7fdedc969ff18798.jpg");
 }
 
-/* line 39, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 37, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .page-landing {
   min-height: 700px;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-/* line 47, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 44, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .footer {
   height: 400px;
 }
 
-/* line 59, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.page-work {
-  background: #393aa3;
-  height: 800px;
+/* line 48, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+.page-segment, .page-about, .page-work, .page-contact {
+  min-height: 800px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-/* line 65, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 66, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .page-about {
   background: #b58f45;
-  height: 800px;
 }
 
-/* line 71, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.page-contact {
-  background: #974040;
-  height: 800px;
+/* line 72, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+.page-work {
+  background-image: url("/assets/bg/bg-work1-fd0fff2c25ebede6d9cf91dea0ef43fe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* line 77, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 83, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 .page-divider {
   height: 40px;
   background: #5F5F5F;
 }
 
-/* line 82, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 88, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 ul.social-media {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -ms-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
   margin: 0 auto 1.0625rem auto;
   margin-left: -1.375rem;
   margin-right: 0;
@@ -5605,17 +11176,20 @@ ul.social-media > li {
 ul.social-media > li > * {
   display: block;
 }
-/* line 84, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-ul.social-media li {
-  margin-left: 6rem;
+@media only screen and (min-width: 40.063em) {
+  /* line 92, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+  ul.social-media li {
+    margin-left: 6rem;
+  }
 }
 
-/* line 97, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 102, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 i {
   font-size: 3rem;
-  color: #D5D5D5;
+  color: #d5d5d5;
 }
-/* line 100, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 105, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
 i:hover {
   color: white;
+  transition: all 500ms ease;
 }

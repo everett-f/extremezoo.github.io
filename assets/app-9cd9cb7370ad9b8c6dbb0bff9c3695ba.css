@@ -146,6 +146,536 @@ select {
   width: 100%;
 }
 
+/* line 106, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+[class*="block-grid-"] {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+}
+/* line 168, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_global.scss */
+[class*="block-grid-"]:before, [class*="block-grid-"]:after {
+  content: " ";
+  display: table;
+}
+/* line 169, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_global.scss */
+[class*="block-grid-"]:after {
+  clear: both;
+}
+/* line 50, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+[class*="block-grid-"] > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+
+@media only screen {
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-1 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-2 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-3 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-4 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-5 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-6 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-7 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-8 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-9 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-10 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-11 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-12 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .small-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-1 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-2 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-3 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-4 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-5 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-6 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-7 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-8 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-9 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-10 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-11 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-12 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .medium-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-1 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-2 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-3 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-4 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-5 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-6 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-7 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-8 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-9 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-10 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-11 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+  /* line 68, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-12 > li:nth-of-type(1n) {
+    clear: none;
+  }
+  /* line 69, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .large-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+}
 /* Clearing Styles */
 /* line 44, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_clearing.scss */
 .clearing-thumbs, [data-clearing] {
@@ -1851,362 +2381,6 @@ select {
   display: block;
 }
 
-@-webkit-keyframes rotate {
-  /* line 54, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-
-  /* line 55, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes rotate {
-  /* line 58, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  /* line 59, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  to {
-    -moz-transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes rotate {
-  /* line 62, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  from {
-    -o-transform: rotate(0deg);
-  }
-
-  /* line 63, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  to {
-    -o-transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  /* line 66, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  from {
-    transform: rotate(0deg);
-  }
-
-  /* line 67, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Orbit Graceful Loading */
-/* line 71, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper {
-  position: relative;
-}
-/* line 74, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper ul {
-  list-style-type: none;
-  margin: 0;
-}
-/* line 81, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper ul li,
-.slideshow-wrapper ul li .orbit-caption {
-  display: none;
-}
-/* line 84, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper ul li:first-child {
-  display: block;
-}
-/* line 87, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .orbit-container {
-  background-color: transparent;
-}
-/* line 90, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .orbit-container li {
-  display: block;
-}
-/* line 92, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .orbit-container li .orbit-caption {
-  display: block;
-}
-/* line 94, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .orbit-container .orbit-bullets li {
-  display: inline-block;
-}
-/* line 100, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .preloader {
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -20px;
-  margin-left: -20px;
-  border: solid 3px;
-  border-color: #555 #fff;
-  border-radius: 1000px;
-  animation-name: rotate;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-/* line 120, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  background: none;
-}
-/* line 126, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  -webkit-transform: translateZ(0);
-}
-/* line 135, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container img {
-  display: block;
-  max-width: 100%;
-}
-/* line 137, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container > * {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  margin-left: 100%;
-}
-/* line 148, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container > *:first-child {
-  margin-left: 0%;
-}
-/* line 157, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container > * .orbit-caption {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(51, 51, 51, 0.8);
-  color: white;
-  width: 100%;
-  padding: 0.625rem 0.875rem;
-  font-size: 0.875rem;
-}
-/* line 174, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slide-number {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 12px;
-  color: white;
-  background: rgba(0, 0, 0, 0);
-  z-index: 10;
-}
-/* line 179, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slide-number span {
-  font-weight: 700;
-  padding: 0.3125rem;
-}
-/* line 185, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer {
-  position: absolute;
-  top: 12px;
-  right: 10px;
-  height: 6px;
-  width: 100px;
-  z-index: 10;
-}
-/* line 192, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer .orbit-progress {
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.3);
-  display: block;
-  width: 0%;
-  position: relative;
-  right: 20px;
-  top: 5px;
-}
-/* line 205, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer > span {
-  display: none;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  width: 11px;
-  height: 14px;
-  border: solid 4px #fff;
-  border-top: none;
-  border-bottom: none;
-}
-/* line 219, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer.paused > span {
-  right: -4px;
-  top: 0px;
-  width: 11px;
-  height: 14px;
-  border: inset 8px;
-  border-left-style: solid;
-  border-color: transparent;
-  border-left-color: #fff;
-}
-/* line 228, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer.paused > span.dark {
-  border-left-color: #333;
-}
-/* line 237, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container:hover .orbit-timer > span {
-  display: block;
-}
-/* line 241, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev,
-.orbit-container .orbit-next {
-  position: absolute;
-  top: 45%;
-  margin-top: -25px;
-  width: 36px;
-  height: 60px;
-  line-height: 50px;
-  color: white;
-  background-color: transparent;
-  text-indent: -9999px !important;
-  z-index: 10;
-}
-/* line 253, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev:hover,
-.orbit-container .orbit-next:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-/* line 257, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev > span,
-.orbit-container .orbit-next > span {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  display: block;
-  width: 0;
-  height: 0;
-  border: inset 10px;
-}
-/* line 267, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev {
-  left: 0;
-}
-/* line 268, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev > span {
-  border-right-style: solid;
-  border-color: transparent;
-  border-right-color: white;
-}
-/* line 273, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev:hover > span {
-  border-right-color: white;
-}
-/* line 277, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-next {
-  right: 0;
-}
-/* line 278, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-next > span {
-  border-color: transparent;
-  border-left-style: solid;
-  border-left-color: white;
-  left: 50%;
-  margin-left: -4px;
-}
-/* line 285, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-next:hover > span {
-  border-left-color: white;
-}
-
-/* line 291, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets-container {
-  text-align: center;
-}
-
-/* line 292, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets {
-  margin: 0 auto 30px auto;
-  overflow: hidden;
-  position: relative;
-  top: 10px;
-  float: none;
-  text-align: center;
-  display: block;
-}
-/* line 301, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets li {
-  cursor: pointer;
-  display: inline-block;
-  width: 0.5625rem;
-  height: 0.5625rem;
-  background: #cccccc;
-  float: none;
-  margin-right: 6px;
-  border-radius: 1000px;
-}
-/* line 312, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets li.active {
-  background: #999999;
-}
-/* line 316, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets li:last-child {
-  margin-right: 0;
-}
-
-/* line 323, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.touch .orbit-container .orbit-prev,
-.touch .orbit-container .orbit-next {
-  display: none;
-}
-/* line 326, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-.touch .orbit-bullets {
-  display: none;
-}
-
-@media only screen and (min-width: 40.063em) {
-  /* line 335, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .touch .orbit-container .orbit-prev,
-  .touch .orbit-container .orbit-next {
-    display: inherit;
-  }
-  /* line 338, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .touch .orbit-bullets {
-    display: block;
-  }
-}
-@media only screen and (max-width: 40em) {
-  /* line 345, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-stack-on-small .orbit-slides-container {
-    height: auto !important;
-  }
-  /* line 346, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-stack-on-small .orbit-slides-container > * {
-    position: relative;
-    margin: 0% !important;
-    opacity: 1 !important;
-  }
-  /* line 352, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-stack-on-small .orbit-slide-number {
-    display: none;
-  }
-
-  /* line 358, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-timer {
-    display: none;
-  }
-
-  /* line 361, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-next, .orbit-prev {
-    display: none;
-  }
-
-  /* line 364, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-bullets {
-    display: none;
-  }
-}
 /* Panels */
 /* line 77, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel {
@@ -2274,6 +2448,25 @@ select {
 }
 /* line 86, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel.radius {
+  border-radius: 3px;
+}
+
+/* Image Thumbnails */
+/* line 61, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_thumbs.scss */
+.th {
+  line-height: 0;
+  display: inline-block;
+  border: solid 4px white;
+  max-width: 100%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-out;
+}
+/* line 51, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_thumbs.scss */
+.th:hover, .th:focus {
+  box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
+}
+/* line 65, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_thumbs.scss */
+.th.radius {
   border-radius: 3px;
 }
 
@@ -3868,6 +4061,528 @@ blockquote p {
   /* line 508, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_type.scss */
   .show-for-print {
     display: inherit !important;
+  }
+}
+/* small displays */
+@media only screen {
+  /* line 244, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small-only, .show-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
+    display: inherit !important;
+  }
+
+  /* line 247, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small-only, .hide-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
+    display: none !important;
+  }
+
+  /* line 251, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .visible-for-small-only, .visible-for-small-up, .visible-for-small, .visible-for-small-down, .hidden-for-medium-only, .hidden-for-medium-up, .hidden-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+  }
+
+  /* line 254, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hidden-for-small-only, .hidden-for-small-up, .hidden-for-small, .hidden-for-small-down, .visible-for-medium-only, .visible-for-medium-up, .visible-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  /* line 259, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  table.show-for-small-only, table.show-for-small-up, table.show-for-small, table.show-for-small-down, table.hide-for-medium-only, table.hide-for-medium-up, table.hide-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up {
+    display: table;
+  }
+
+  /* line 262, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  thead.show-for-small-only, thead.show-for-small-up, thead.show-for-small, thead.show-for-small-down, thead.hide-for-medium-only, thead.hide-for-medium-up, thead.hide-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up {
+    display: table-header-group !important;
+  }
+
+  /* line 265, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tbody.show-for-small-only, tbody.show-for-small-up, tbody.show-for-small, tbody.show-for-small-down, tbody.hide-for-medium-only, tbody.hide-for-medium-up, tbody.hide-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up {
+    display: table-row-group !important;
+  }
+
+  /* line 268, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tr.show-for-small-only, tr.show-for-small-up, tr.show-for-small, tr.show-for-small-down, tr.hide-for-medium-only, tr.hide-for-medium-up, tr.hide-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up {
+    display: table-row !important;
+  }
+
+  /* line 271, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  th.show-for-small-only, td.show-for-small-only, th.show-for-small-up, td.show-for-small-up, th.show-for-small, td.show-for-small, th.show-for-small-down, td.show-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.hide-for-medium-up, td.hide-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up {
+    display: table-cell !important;
+  }
+}
+/* medium displays */
+@media only screen and (min-width: 40.063em) {
+  /* line 244, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
+    display: inherit !important;
+  }
+
+  /* line 247, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
+    display: none !important;
+  }
+
+  /* line 251, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .visible-for-medium-only, .visible-for-medium-up, .visible-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+  }
+
+  /* line 254, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .hidden-for-medium-only, .hidden-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  /* line 259, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.show-for-medium-only, table.show-for-medium-up, table.show-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up {
+    display: table;
+  }
+
+  /* line 262, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.show-for-medium-only, thead.show-for-medium-up, thead.show-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up {
+    display: table-header-group !important;
+  }
+
+  /* line 265, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.show-for-medium-only, tbody.show-for-medium-up, tbody.show-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up {
+    display: table-row-group !important;
+  }
+
+  /* line 268, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.show-for-medium-only, tr.show-for-medium-up, tr.show-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up {
+    display: table-row !important;
+  }
+
+  /* line 271, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.show-for-medium-only, td.show-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.show-for-medium, td.show-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up {
+    display: table-cell !important;
+  }
+}
+/* large displays */
+@media only screen and (min-width: 64.063em) {
+  /* line 244, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
+    display: inherit !important;
+  }
+
+  /* line 247, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
+    display: none !important;
+  }
+
+  /* line 251, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+  }
+
+  /* line 254, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  /* line 259, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.show-for-large-only, table.show-for-large-up, table.show-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up {
+    display: table;
+  }
+
+  /* line 262, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.show-for-large-only, thead.show-for-large-up, thead.show-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up {
+    display: table-header-group !important;
+  }
+
+  /* line 265, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.show-for-large-only, tbody.show-for-large-up, tbody.show-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up {
+    display: table-row-group !important;
+  }
+
+  /* line 268, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.show-for-large-only, tr.show-for-large-up, tr.show-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up {
+    display: table-row !important;
+  }
+
+  /* line 271, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.show-for-large-only, td.show-for-large-only, th.show-for-large-up, td.show-for-large-up, th.show-for-large, td.show-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up {
+    display: table-cell !important;
+  }
+}
+/* xlarge displays */
+@media only screen and (min-width: 90.063em) {
+  /* line 244, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
+    display: inherit !important;
+  }
+
+  /* line 247, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
+    display: none !important;
+  }
+
+  /* line 251, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .hidden-for-large-only, .visible-for-large-up, .hidden-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+  }
+
+  /* line 254, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .visible-for-large-only, .hidden-for-large-up, .visible-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  /* line 259, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-large-only, table.show-for-large-up, table.hide-for-large, table.hide-for-large-down, table.show-for-xlarge-only, table.show-for-xlarge-up, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up {
+    display: table;
+  }
+
+  /* line 262, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-large-only, thead.show-for-large-up, thead.hide-for-large, thead.hide-for-large-down, thead.show-for-xlarge-only, thead.show-for-xlarge-up, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up {
+    display: table-header-group !important;
+  }
+
+  /* line 265, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-large-only, tbody.show-for-large-up, tbody.hide-for-large, tbody.hide-for-large-down, tbody.show-for-xlarge-only, tbody.show-for-xlarge-up, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up {
+    display: table-row-group !important;
+  }
+
+  /* line 268, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.show-for-xlarge-only, tr.show-for-xlarge-up, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up {
+    display: table-row !important;
+  }
+
+  /* line 271, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.show-for-xlarge-only, td.show-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up {
+    display: table-cell !important;
+  }
+}
+/* xxlarge displays */
+@media only screen and (min-width: 120.063em) {
+  /* line 244, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .hide-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
+    display: inherit !important;
+  }
+
+  /* line 247, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .show-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
+    display: none !important;
+  }
+
+  /* line 251, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .hidden-for-large-only, .visible-for-large-up, .hidden-for-large, .hidden-for-large-down, .hidden-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+  }
+
+  /* line 254, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .visible-for-large-only, .hidden-for-large-up, .visible-for-large, .visible-for-large-down, .visible-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  /* line 259, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-large-only, table.show-for-large-up, table.hide-for-large, table.hide-for-large-down, table.hide-for-xlarge-only, table.show-for-xlarge-up, table.show-for-xxlarge-only, table.show-for-xxlarge-up {
+    display: table;
+  }
+
+  /* line 262, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-large-only, thead.show-for-large-up, thead.hide-for-large, thead.hide-for-large-down, thead.hide-for-xlarge-only, thead.show-for-xlarge-up, thead.show-for-xxlarge-only, thead.show-for-xxlarge-up {
+    display: table-header-group !important;
+  }
+
+  /* line 265, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-large-only, tbody.show-for-large-up, tbody.hide-for-large, tbody.hide-for-large-down, tbody.hide-for-xlarge-only, tbody.show-for-xlarge-up, tbody.show-for-xxlarge-only, tbody.show-for-xxlarge-up {
+    display: table-row-group !important;
+  }
+
+  /* line 268, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.hide-for-xlarge-only, tr.show-for-xlarge-up, tr.show-for-xxlarge-only, tr.show-for-xxlarge-up {
+    display: table-row !important;
+  }
+
+  /* line 271, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.show-for-xxlarge-only, td.show-for-xxlarge-only, th.show-for-xxlarge-up, td.show-for-xxlarge-up {
+    display: table-cell !important;
+  }
+}
+/* Orientation targeting */
+/* line 286, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.show-for-landscape,
+.hide-for-portrait {
+  display: inherit !important;
+}
+
+/* line 288, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.hide-for-landscape,
+.show-for-portrait {
+  display: none !important;
+}
+
+/* Specific visibility for tables */
+/* line 293, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+table.hide-for-landscape, table.show-for-portrait {
+  display: table;
+}
+
+/* line 297, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+thead.hide-for-landscape, thead.show-for-portrait {
+  display: table-header-group !important;
+}
+
+/* line 301, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+tbody.hide-for-landscape, tbody.show-for-portrait {
+  display: table-row-group !important;
+}
+
+/* line 305, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+tr.hide-for-landscape, tr.show-for-portrait {
+  display: table-row !important;
+}
+
+/* line 310, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+td.hide-for-landscape, td.show-for-portrait,
+th.hide-for-landscape,
+th.show-for-portrait {
+  display: table-cell !important;
+}
+
+@media only screen and (orientation: landscape) {
+  /* line 315, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-landscape,
+  .hide-for-portrait {
+    display: inherit !important;
+  }
+
+  /* line 317, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-landscape,
+  .show-for-portrait {
+    display: none !important;
+  }
+
+  /* Specific visibility for tables */
+  /* line 322, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  table.show-for-landscape, table.hide-for-portrait {
+    display: table;
+  }
+
+  /* line 326, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  thead.show-for-landscape, thead.hide-for-portrait {
+    display: table-header-group !important;
+  }
+
+  /* line 330, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tbody.show-for-landscape, tbody.hide-for-portrait {
+    display: table-row-group !important;
+  }
+
+  /* line 334, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tr.show-for-landscape, tr.hide-for-portrait {
+    display: table-row !important;
+  }
+
+  /* line 339, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  td.show-for-landscape, td.hide-for-portrait,
+  th.show-for-landscape,
+  th.hide-for-portrait {
+    display: table-cell !important;
+  }
+}
+@media only screen and (orientation: portrait) {
+  /* line 345, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-portrait,
+  .hide-for-landscape {
+    display: inherit !important;
+  }
+
+  /* line 347, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-portrait,
+  .show-for-landscape {
+    display: none !important;
+  }
+
+  /* Specific visibility for tables */
+  /* line 352, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  table.show-for-portrait, table.hide-for-landscape {
+    display: table;
+  }
+
+  /* line 356, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  thead.show-for-portrait, thead.hide-for-landscape {
+    display: table-header-group !important;
+  }
+
+  /* line 360, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tbody.show-for-portrait, tbody.hide-for-landscape {
+    display: table-row-group !important;
+  }
+
+  /* line 364, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tr.show-for-portrait, tr.hide-for-landscape {
+    display: table-row !important;
+  }
+
+  /* line 369, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  td.show-for-portrait, td.hide-for-landscape,
+  th.show-for-portrait,
+  th.hide-for-landscape {
+    display: table-cell !important;
+  }
+}
+/* Touch-enabled device targeting */
+/* line 374, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.show-for-touch {
+  display: none !important;
+}
+
+/* line 375, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.hide-for-touch {
+  display: inherit !important;
+}
+
+/* line 376, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.touch .show-for-touch {
+  display: inherit !important;
+}
+
+/* line 377, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.touch .hide-for-touch {
+  display: none !important;
+}
+
+/* Specific visibility for tables */
+/* line 380, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+table.hide-for-touch {
+  display: table;
+}
+
+/* line 381, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.touch table.show-for-touch {
+  display: table;
+}
+
+/* line 382, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+thead.hide-for-touch {
+  display: table-header-group !important;
+}
+
+/* line 383, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.touch thead.show-for-touch {
+  display: table-header-group !important;
+}
+
+/* line 384, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+tbody.hide-for-touch {
+  display: table-row-group !important;
+}
+
+/* line 385, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.touch tbody.show-for-touch {
+  display: table-row-group !important;
+}
+
+/* line 386, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+tr.hide-for-touch {
+  display: table-row !important;
+}
+
+/* line 387, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.touch tr.show-for-touch {
+  display: table-row !important;
+}
+
+/* line 388, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+td.hide-for-touch {
+  display: table-cell !important;
+}
+
+/* line 389, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.touch td.show-for-touch {
+  display: table-cell !important;
+}
+
+/* line 390, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+th.hide-for-touch {
+  display: table-cell !important;
+}
+
+/* line 391, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+.touch th.show-for-touch {
+  display: table-cell !important;
+}
+
+/* Print visibility */
+@media print {
+  /* line 396, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .show-for-print {
+    display: block;
+  }
+
+  /* line 397, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  .hide-for-print {
+    display: none;
+  }
+
+  /* line 399, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  table.show-for-print {
+    display: table;
+  }
+
+  /* line 400, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  thead.show-for-print {
+    display: table-header-group !important;
+  }
+
+  /* line 401, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tbody.show-for-print {
+    display: table-row-group !important;
+  }
+
+  /* line 402, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  tr.show-for-print {
+    display: table-row !important;
+  }
+
+  /* line 403, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  td.show-for-print {
+    display: table-cell !important;
+  }
+
+  /* line 404, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_visibility.scss */
+  th.show-for-print {
+    display: table-cell !important;
   }
 }
 /* 
@@ -11023,89 +11738,20 @@ blockquote p {
   }
 }
 
-/* line 3, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.title, .title-main, .title-page {
-  color: white;
-  font-size: 4.25rem;
-}
-
-/* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.title-main {
-  background: rgba(205, 205, 205, 0.14);
-}
-
-/* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.sub-title {
-  font-size: 3.25rem;
-  color: #d5d5d5;
-}
-
-/* line 19, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.title-page {
-  margin-top: 30px;
-}
-
-/* line 32, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url("/assets/bg/bridge3-c04a0a14666844ef7fdedc969ff18798.jpg");
-}
-
-/* line 40, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.page-landing {
-  min-height: 700px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-/* line 47, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.footer {
-  height: 400px;
-}
-
-/* line 63, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.page-about {
-  background: #b58f45;
+/* line 2, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_mixins.scss */
+.page-segment, .page-about, .page-portfolio, .page-contact {
   min-height: 800px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 
-/* line 77, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.page-work {
-  background-image: url("/assets/bg/bg-work1-fd0fff2c25ebede6d9cf91dea0ef43fe.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 800px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-/* line 84, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.page-contact {
-  background-image: url("/assets/bg/bg-contact-315b5a13f292b4bdb89c3f144f7dc485.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 800px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-/* line 88, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-.page-divider {
-  height: 40px;
-  background: #5F5F5F;
-}
-
-/* line 93, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-ul.social-media {
-  -webkit-animation-name: bounce;
-  -moz-animation-name: bounce;
-  -ms-animation-name: bounce;
-  -o-animation-name: bounce;
-  animation-name: bounce;
+/* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_mixins.scss */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -ms-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -ms-animation-duration: 1s;
@@ -11131,40 +11777,147 @@ ul.social-media {
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  margin: 0 auto 1.0625rem auto;
-  margin-left: -1.375rem;
-  margin-right: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  margin-top: 80px;
-  margin-bottom: 50px;
 }
-/* line 42, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_inline-lists.scss */
-ul.social-media > li {
-  list-style: none;
-  float: left;
-  margin-left: 1.375rem;
-  display: block;
+
+/* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_mixins.scss */
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -ms-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-/* line 47, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/bower_components/foundation/scss/foundation/components/_inline-lists.scss */
-ul.social-media > li > * {
-  display: block;
+
+/* line 1, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+.title, .title-main, .title-page {
+  color: white;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 100, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
-  ul.social-media li {
-    margin-left: 6rem;
+  /* line 1, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+  .title, .title-main, .title-page {
+    font-size: 4.25rem;
   }
 }
 
-/* line 110, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 8, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+.title-main {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+.sub-title {
+  color: #d5d5d5;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 14, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+  .sub-title {
+    font-size: 3.25rem;
+  }
+}
+
+/* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+.title-page {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/assets/bg/bridge3-c04a0a14666844ef7fdedc969ff18798.jpg");
+}
+
+/* line 38, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+.page-about {
+  background: #b58f45;
+}
+/* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_mixins.scss */
+.page-about p {
+  color: #b58f45;
+  color: #907237;
+  font-size: 1.2rem;
+}
+
+/* line 41, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+.page-portfolio {
+  background: #393aa3;
+}
+/* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_mixins.scss */
+.page-portfolio p {
+  color: #393aa3;
+  color: #2c2d7d;
+  font-size: 1.2rem;
+}
+
+/* line 46, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+.page-contact {
+  background: #974040;
+}
+/* line 18, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_mixins.scss */
+.page-contact p {
+  color: #974040;
+  color: #733131;
+  font-size: 1.2rem;
+}
+
+/* line 50, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
+.page-divider {
+  height: 5px;
+  background: #333333;
+}
+
+/* line 57, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
 i {
   font-size: 3rem;
   color: #d5d5d5;
 }
-/* line 113, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_homepage.scss */
+/* line 60, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
 i:hover {
   color: white;
   transition: all 500ms ease;
+}
+
+/* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+.page-landing {
+  min-height: 700px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* line 13, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+ul.social-media-home {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+/* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+.footer {
+  height: 400px;
 }

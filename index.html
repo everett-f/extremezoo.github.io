@@ -15,7 +15,7 @@
 <title>Everett | Web Development</title>
 
 
-  <link rel="stylesheet" href="/assets/app-9cd9cb7370ad9b8c6dbb0bff9c3695ba.css">
+  <link rel="stylesheet" href="/assets/app-98667287b3154f265302cd5fac91664b.css">
   <script src="/assets/modernizr-61e3294d9ec8ee7098e45946493b1314.js"></script>
 
 
@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="tester">
+<body>
 
 
 	
@@ -121,18 +121,13 @@
 
 		</div>
 
-		<div class="large-7 columns" style="margin-top:60px">
+		<div class="large-7 columns">
 			<div class="panel">
-				<p>
-					<b>Hello</b>, <br>
-					My name is Everett and I love Web development. I have always had a passion for Design and Development of new websites. Being able to see your portfolio come alive before your eyes is so exciting. <br><br>
-					I love learning new programming languages and new frameportfolios that enhancne my coding experience. I am finishing up the last two courses for my bachelors degree in Computer Science at the University at Albany.
+				<p>I'm Everett. My passion is web development, and it's been a large part of my life for years. I've built sites from the ground up and I've taken existing sites and breathed new life into them through creativity and persistence. Both can be exciting challenges, and there's nothing more rewarding than watching a project come together one step at a time, on the front and the back end.</p>
+
+				<p>I'm experienced in language, language, language and language. I love teaching myself new languages and new ways of doing things. I'm a perfectionist at heart, both with my own skillset and with the sites I work on. But you didn't come here to read, you came to see what I can do. Take a look at some of my past projects. We'll find out what we can do together.
 				</p>
 			</div>
-
-
-			
-
 		</div>
 	</div>
 
@@ -146,7 +141,9 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<h1 class="text-center title-page">Portfolio</h1>
+
 		</div>
+		<hr class="hide-for-small-only">
 
 		<div class="large-5 columns panel">
 			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolort</p>
@@ -154,10 +151,11 @@
 		</div>
 
 		<div class="large-7 columns">
-			<ul class="clearing-thumbs small-block-grid-2" data-clearing>
+			<ul class="clearing-thumbs medium-block-grid-2 small-block-grid-1" data-clearing>
 				<li><a class="th" href="/assets/portfolio/active-solar-portfolio-a71de9eb638c46d13effaabc83b9f930.jpg"><img src="/assets/portfolio/active-solar-portfolio-a71de9eb638c46d13effaabc83b9f930.jpg"></a></li>
 				<li><a class="th" href="/assets/portfolio/ejc-portfolio-d4fab8b022024e5c8e2474e448f0aade.jpg"><img src="/assets/portfolio/th/ejc-portfolio-th-654bef9c43ae71182609b2f999592b94.jpg"></a></li>
-				<li><a class="th" href="/assets/profile-picture/ev2-88e38be0021519b1f43ed82d77083d2c.jpg"><img src="/assets/profile-picture/ev2-88e38be0021519b1f43ed82d77083d2c.jpg"></a></li>
+				<li><a class="th" href="/assets/portfolio/your-site-here-6be79ec35e884e9d5787cda7ec500586.jpg"><img src="/assets/portfolio/your-site-here-6be79ec35e884e9d5787cda7ec500586.jpg"></a></li>
+				<li><a class="th" href="/assets/portfolio/your-site-here-6be79ec35e884e9d5787cda7ec500586.jpg"><img src="/assets/portfolio/your-site-here-6be79ec35e884e9d5787cda7ec500586.jpg"></a></li>
 
 			</ul>
 			
@@ -170,6 +168,8 @@
 
 <div class="page-divider"></div>
 
+
+
 <div class="page-contact" id="contact" data-magellan-destination="contact">
 	<a name="contact"></a>
 	<div class="row">
@@ -177,11 +177,55 @@
 			<h1 class="text-center title-page">Contact</h1>
 		</div>
 
-		<div class="large-5 columns right panel">
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolort</p>
-			
+		<hr class="hide-for-small-only">
+
+
+
+		<div class="large-6 columns">
+
+			<div class="panel">
+				<dl>
+					<dt>Phone</dt>
+						<dd>555-555-5555</dd>
+					<dt>Email</dt>
+						<dd>blah@fake.com</dd>
+					<dt>Address</dt>
+						<dd>Saratoga Springs, NY</dd>
+				</dl>
+				
+			</div>
+
+			<div class="panel">
+				<form data-abide>
+					<div class="name-field">
+						<label>Your name <small>required</small>
+							<input type="text" required pattern="[a-zA-Z]+">
+						</label>
+						<small class="error">Name is required and must be a string.</small>
+					</div>
+					<div class="email-field">
+						<label>Email <small>required</small>
+							<input type="email" required>
+						</label>
+						<small class="error">An email address is required.</small>
+					</div>
+					<div class="comment-field">
+						<label>Comments
+							<textarea name="comments-field" placeholder="Enter your comments here"></textarea>
+						</label>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
 		</div>
 
+
+		<div class="large-6 columns">
+			<div class="panel">
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolort</p>
+				
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -195,7 +239,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 
-			<h1 class='text-center title-main'>My Footer</h1>
+			<!-- <h1 class='text-center title-main'>My Footer</h1> -->
 			
 		</div>
 	</div>

@@ -12416,21 +12416,28 @@ i:hover {
   }
 }
 
-/* line 20, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+  ul.social-media-home {
+    margin-top: 80px;
+  }
+}
+
+/* line 22, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
 .footer {
   height: 70px;
   background: #333333;
 }
 
-/* line 27, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+/* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
 .scroll-down {
   margin-top: 40px;
 }
-/* line 29, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+/* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
 .scroll-down h2, .scroll-down h3 {
   color: white;
 }
-/* line 31, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+/* line 33, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
 .scroll-down .down-arrow {
   font-size: 6rem;
 }

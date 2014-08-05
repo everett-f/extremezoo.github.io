@@ -12393,12 +12393,12 @@ body {
 }
 
 /* line 53, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
-i {
+i a {
   font-size: 3rem;
   color: #d5d5d5;
 }
 /* line 56, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_shared-classes.scss */
-i:hover {
+i a:hover {
   color: white;
   transition: all 500ms ease;
 }
@@ -12409,17 +12409,15 @@ i:hover {
   padding-bottom: 20px;
   padding-top: 20px;
 }
-@media only screen and (max-width: 40em) {
-  /* line 5, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
-  .page-landing {
-    min-height: 600px;
-  }
-}
 
-@media only screen and (min-width: 40.063em) {
+/* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
+ul.social-media-home {
+  margin-top: 80px;
+}
+@media only screen and (max-width: 40em) {
   /* line 15, C:/Users/Everett/Documents/GitHub/extremezoo.github.io/source/_assets/stylesheets/_page-home.scss */
   ul.social-media-home {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 }
 
